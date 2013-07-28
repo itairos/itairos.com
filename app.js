@@ -14,8 +14,6 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-// TODO: Remove this!
-app.use(express.basicAuth('n00b', 'boom'));
 app.use(express.logger('dev'));
 app.use(express.compress());
 app.use(express.bodyParser());

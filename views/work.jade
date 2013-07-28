@@ -65,7 +65,7 @@ block content
 				| and improved the OneNote sync engine to better support mobile devices.
 		tr.poweritem
 			td.poweritem(colspan="2")
-				div#onenote-screenshots.carousel.slide(data-interval="false")
+				div#onenote-screenshots.carousel.slide(style="width: 640px; margin: 0 auto", data-interval="false")
 					ol.carousel-indicators
 						li.active(data-target="#onenote-screenshots", data-slide-to="0")
 						li(data-target="#onenote-screenshots", data-slide-to="1")
@@ -93,7 +93,7 @@ block content
 				h3 Mayorita
 		tr.poweritem
 			td.poweritem-icon
-				img(src="/images/mayorino.png")
+				img(src="/images/mayorino.png", style="width: 50px; height: 50px;")
 			td.poweritem
 				| <a href="http://mayorita.com">Mayorita</a> is a free web service that lets users tap into the
 				| knowledge and opinions of others by asking any yes/no question and getting
@@ -169,11 +169,10 @@ block content
 		tr.poweritem
 			td.poweritem
 			td.poweritem
-				<!-- TODO: This is not responsive :( -->
 				h4 Firefox
-				<iframe src="http://player.vimeo.com/video/14165544?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="500" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				div.responsive-video.widescreen <iframe src="http://player.vimeo.com/video/14165544?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="500" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				h4 Chrome
-				<iframe width="500" height="400" src="http://www.youtube.com/embed/VEApdCkwLzY?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+				div.responsive-video.widescreen <iframe width="500" height="400" src="http://www.youtube.com/embed/VEApdCkwLzY?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 	table
 		tr
 			td(colspan="2")
