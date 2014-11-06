@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+  include include/navbar
+
+  //- About
+  div#ww
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.centered
+          img.img-circle(src="images/profile.jpg", alt="Itai")
+          h1 Itai Rosenberger
+          p
+            | I'm a senior software engineering lead at
+            | <a href="http://www.microsoft.com">Microsoft</a>, currently with the
+            | <a href="http://www.microsoft.com/mac">Apple Productivity Experiences</a>
+            | team (formerly known as the Macintosh Business Unit or MacBU) where I 
+            | work on Microsoft Word for <a href="https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913">iOS</a>
+            | and <a href="http://www.microsoft.com/mac/word">Mac</a>.
+            | I previously worked on Microsoft OneNote for <a href="https://itunes.apple.com/us/app/microsoft-onenote-for-iphone/id410395246">iPhone</a>,
+            | <a href="https://itunes.apple.com/us/app/microsoft-onenote-for-ipad/id478105721">iPad</a>
+            | and <a href="https://itunes.apple.com/us/app/microsoft-onenote/id784801555">Mac</a>.
+          p
+            | I am also a student at the <a href="http://www.cs.washington.edu">
+            | School of Computer Science and Engineering</a> at the 
+            | <a href="http://www.washington.edu">University of Washington</a>,
+            | where I'm pursuing my master's degree in CS.
+    include include/projects
+
+  include include/footer

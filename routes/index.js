@@ -1,7 +1,7 @@
-exports.index = function(req, res){
-  res.render('index', { title: 'About' });
+exports.about = function(req, res){
+  res.render('about', { title: 'Itai Rosenberger' });
 };
 
-exports.work = function(req, res){
-  res.render('work', { title: 'Work' });
+exports.projects = function(req, res){
+  res.render('projects', { title: 'Itai Rosenberger &middot Projects' });
 };

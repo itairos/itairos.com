@@ -1,0 +1,52 @@
+table#csetella
+  tr
+    td(colspan="2")
+      h3.pull-left CSEtella
+  tr
+    td(colspan="2")
+      h5.pull-left <a href="https://github.com/itairos/CSEtella">Source Code</a>
+    tr.poweritem
+      td.poweritem-icon
+        i.fa.fa-group.fa-2x
+      td.poweritem
+        | CSEtella is a <a href="http://rfc-gnutella.sourceforge.net/">Gnutella</a>-like P2P network.
+        | More details can be found
+        | <a href="http://www.cs.washington.edu/education/courses/csep552/13sp/assignments/a3.html">here</a>.
+  tr.poweritem
+    td.poweritem-icon
+      i.fa.fa-code.fa-2x
+    td.poweritem Implemented a P2P node with a web frontend for monitoring the node and a crawler for discovering the topology of the P2P network. The node uses the following open source projects:
+      dl
+        dt <a href="http://coffeescript.org">CoffeeScript</a>
+        dd a programming language that transcompiles to JavaScript.
+        dt <a href="http://nodejs.org">node.js</a>
+        dd evented I/O in JavaScript.
+        dt <a href="https://code.google.com/p/leveldb/">LevelDB</a>
+        dd a fast key value storage library by Google.
+        dt <a href="https://github.com/caolan/async">async<a/>, <a href="https://github.com/isaacs/node-lru-cache">lru-cache</a>, <a href="http://underscorejs.org">underscore.js</a>, <a href="http://momentjs.com">moment.js</a>
+        dd node.js modules
+        dt <a href="http://expressjs.com">Express</a>
+        dd fast node.js network app framework by <a href="http://twitter.com/tjholowaychuk">@tjholowaychuk</a>.
+        dt <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
+        dd UI boilerplate for modern web apps by Twitter.
+        dt <a href="http://jquery.com">jQuery</a>
+        dd A popular JavaScript library by <a href="https://twitter.com/jeresig">@jeresig</a>.
+        dt <a href="http://angularjs.org">Angular.js</a>
+        dd An MVC JavaScript library by Google.
+        dt <a href="http://d3js.org">d3.js</a>
+        dd A JavaScript visualization library.
+  tr.poweritem
+    td(colspan="2")
+      img.center-block.img-responsive(src="images/csetella/csetella-topology.png")
+      h5 Crawler
+      p Discovery of the network's topology using breadth first search.
+  tr.poweritem
+    td(colspan="2")
+      img.center-block.img-responsive(src="images/csetella/csetella-monitor.png")
+      h5 Web Frontend
+      p Interesting stats about the node.
+  tr.poweritem
+    td(colspan="2")
+      img.center-block.img-responsive(src="images/csetella/csetella-peers.png")
+      h5 Web Frontend II
+      p List of nodes which replied or forwarded a message via the monitored node.

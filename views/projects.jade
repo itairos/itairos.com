@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+  include include/navbar
+
+  //- About
+  div#ww
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.centered
+          h1 Projects
+          hr
+          h5 This is a partial, unordered list of the projects I've been working on over the past several years.
+      .row
+        .col-lg-8.col-lg-offset-2.centered
+          include projects/word
+          include projects/onenote
+          include projects/windows8
+          include projects/csetella
+          include projects/mayorita
+          include projects/firesay
+
+  include include/footer
